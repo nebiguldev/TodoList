@@ -1,9 +1,11 @@
 package hepsiemlak.todolist.TodoList;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.couchbase.core.mapping.Document;
 
-@Entity
+
+
+@Document
 public class TodoItem {
     @Id
     private Long id;

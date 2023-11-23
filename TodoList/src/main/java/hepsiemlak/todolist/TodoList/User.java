@@ -2,14 +2,19 @@ package hepsiemlak.todolist.TodoList;
 
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.couchbase.core.mapping.Document;
+import org.springframework.data.couchbase.core.mapping.Field;
 
-@Entity
+
+@Document
 public class User {
     @Id
+    @Field
     private Long id;
+    @Field
     private String username;
+    @Field
     private String password;
 
     public Long getId() {
