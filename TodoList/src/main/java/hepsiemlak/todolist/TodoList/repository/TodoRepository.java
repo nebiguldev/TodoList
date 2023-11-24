@@ -1,5 +1,6 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.repository;
 
+import hepsiemlak.todolist.TodoList.entity.TodoItem;
 import org.springframework.data.couchbase.repository.CouchbaseRepository;
 import org.springframework.stereotype.Repository;
 

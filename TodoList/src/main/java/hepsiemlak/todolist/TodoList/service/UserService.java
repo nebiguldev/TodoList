@@ -1,5 +1,7 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.service;
 
+import hepsiemlak.todolist.TodoList.entity.User;
+import hepsiemlak.todolist.TodoList.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

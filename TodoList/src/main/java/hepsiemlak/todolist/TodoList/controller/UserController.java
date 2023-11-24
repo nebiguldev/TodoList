@@ -1,5 +1,7 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.controller;
 
+import hepsiemlak.todolist.TodoList.service.UserService;
+import hepsiemlak.todolist.TodoList.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
