@@ -1,4 +1,4 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.config;
 
 import com.couchbase.client.java.query.QueryScanConsistency;
 import org.springframework.context.annotation.Bean;

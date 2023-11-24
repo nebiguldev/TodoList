@@ -1,4 +1,4 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;

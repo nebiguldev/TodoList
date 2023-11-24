@@ -1,13 +1,14 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.service;
 
 import com.couchbase.client.core.error.CouchbaseException;
-import com.couchbase.client.java.kv.IncrementOptions;
+import hepsiemlak.todolist.TodoList.entity.TodoItem;
+import hepsiemlak.todolist.TodoList.entity.User;
+import hepsiemlak.todolist.TodoList.repository.TodoRepository;
+import hepsiemlak.todolist.TodoList.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.couchbase.core.CouchbaseOperations;
 import org.springframework.data.couchbase.core.CouchbaseTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.UUID;
 

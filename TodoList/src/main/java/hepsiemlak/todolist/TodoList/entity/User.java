@@ -1,4 +1,4 @@
-package hepsiemlak.todolist.TodoList;
+package hepsiemlak.todolist.TodoList.entity;
 
 
 
