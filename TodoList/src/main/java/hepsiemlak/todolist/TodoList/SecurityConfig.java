@@ -18,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/users/register", "/users/login").permitAll() // Register ve login endpoint'lerine herkesin erişimine izin ver
+                .antMatchers("/todo/{userId}","/users/register", "/users/login").permitAll() // Register ve login endpoint'lerine herkesin erişimine izin ver
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();

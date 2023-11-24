@@ -5,6 +5,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class UserService {
@@ -25,7 +26,7 @@ public class UserService {
         // Kullanıcının şifresini hashleyin
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
-
+        user.setId((UUID.randomUUID()));
         // Kullanıcıyı veritabanına kaydedin
         return userRepository.save(user);
     }
