@@ -3,21 +3,29 @@ package hepsiemlak.todolist.TodoList;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
 
+import java.util.UUID;
 
 
 @Document
 public class TodoItem {
     @Id
-    private Long id;
+    private UUID id;
     private String title;
     private boolean completed;
-    private Long userId; // Kullanıcıya ait TO-DO öğesi
+    private UUID userId; // Kullanıcıya ait TO-DO
 
-    public Long getId() {
+    public TodoItem(UUID id, String title, boolean completed, UUID userId) {
+        this.id = id;
+        this.title = title;
+        this.completed = completed;
+        this.userId = userId;
+    }
+
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
@@ -37,11 +45,11 @@ public class TodoItem {
         this.completed = completed;
     }
 
-    public Long getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(UUID userId) {
         this.userId = userId;
     }
 }
